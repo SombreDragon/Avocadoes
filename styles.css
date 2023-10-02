@@ -1,0 +1,92 @@
+body {
+    text-align: center;
+    background: linear-gradient(#f7ede2, #f8edeb);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #355070;
+}
+
+* {
+    transition: all 0.2s ease-out;
+}
+
+.center-background {
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid red; */
+    align-items: center;
+}
+
+.center-background h1 {
+    font-size: 60px;
+}
+
+#header-img {
+    border: 6px solid #EAAC8B;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    margin: 10px 0 30px 0;
+}
+
+.header-background {
+    background: #EAAC8B;
+    text-shadow: 0px 0px 1px #f7ede2;
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin: 10px 0;
+    color: #355070;
+    font-size: 24px;
+}
+
+#midsection-h2 {
+    font-size: 32px;
+    color: #EAAC8B;
+    background: #355070;
+    margin: 50px 0 0px 0;
+}
+
+.gift-box-row {
+    /* border: 2px solid red; */
+    display: flex;
+    /* flex-direction: row; */
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* margin: 50px 0 */
+}
+
+.gift-box {
+    width: calc(50% - 10px);
+    padding: 10px;
+    /* border: 2px solid red;     */
+    border-radius: 30px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.gift-box h3 {
+    font-size: 30px;
+    opacity: 0;
+}
+
+.gift-box:hover h3 {
+    opacity: 1;
+    font-size: 30px;
+}
+
+.gift-img {
+    width: 400px;
+    height: 400px;
+    border-radius: 30px;
+    border: 7px solid #355070;
+    background-image: url("https://d33byq9npfy6u9.cloudfront.net/4/2021/10/12150604/Facetune_26-07-2021-20-51-31.jpeg");
+    background-size: cover;
+}
+
+.gift-img:hover {
+    background-image: var(--hover-image-url);
+}
+
+/* In this example, you define the hover image URLs as CSS custom properties and apply them to the .gift-img elements using the style attribute in the HTML. This centralizes the hover image URLs, making updates easier and promoting code reusability. */
